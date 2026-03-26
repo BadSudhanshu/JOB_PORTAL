@@ -20,6 +20,13 @@ const Home = () => {
   return (
     <div>
       <Navbar />
+      <div className='max-w-7xl mx-auto p-4'>
+        {user?.fullname && (
+          <h2 className='text-xl font-semibold mb-4'>
+            Welcome back, {user.fullname}!
+          </h2>
+        )}
+      </div>
       <HeroSection />
       <CategoryCarousel />
       <LatestJobs />
